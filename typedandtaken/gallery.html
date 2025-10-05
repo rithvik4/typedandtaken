@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery | typedandtaken</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="typedandtaken home">typed<span>and</span>taken</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="writings.html">Writings</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero (same look as other pages) -->
+<section class="page-hero gallery-hero animate" aria-label="Gallery hero">
+  <div class="hero-inner">
+    <br>
+    <br>
+    <h1>Moments from the road & corners of life</h1>
+    <p>Selected frames — click any photo to view larger, download, or open on Instagram.</p>
+  </div>
+</section>
+
+<!-- Gallery -->
+<main class="gallery-main">
+  <section class="gallery animate" aria-label="Photo gallery">
+    <div class="gallery-head" style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:1rem 5%;">
+      <h2>My Photography</h2>
+      <a href="#" id="instagramBtnSmall" class="btn" style="background:transparent;color:#7a6fff;border:1px solid rgba(122,111,255,0.12);">Follow on Instagram</a>
+    </div>
+
+    <div class="photo-grid" id="photoGrid" style="max-width:1200px;margin:1.2rem auto;padding:0 5%;">
+      <!-- NOTE: titles removed (no captions). Only images. -->
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/108.jpeg" alt="train window hymn" data-src="images/108.jpeg" data-caption="Train window hymn — Andhra lanes" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/102.jpeg" alt="city dawn" data-src="images/102.jpeg" data-caption="City dawn — early light" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/101.jpeg" alt="soft afternoon" data-src="images/101.jpeg" data-caption="Soft afternoon — pockets of quiet" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/103.jpeg" alt="street geometry" data-src="images/103.jpeg" data-caption="Street geometry" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/104.jpeg" alt="market colors" data-src="images/104.jpeg" data-caption="Market colors" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/105.jpeg" alt="lonely bench" data-src="images/105.jpeg" data-caption="Lonely bench" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/112.jpeg" alt="old temple" data-src="images/112.jpeg" data-caption="Old temple — Ahobilam" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/109.jpeg" alt="rain reflections" data-src="images/109.jpeg" data-caption="Rain reflections" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/111.jpeg" alt="folk festival" data-src="images/111.jpeg" data-caption="Folk festival — Bathukamma" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/106.jpeg" alt="market detail" data-src="images/106.jpeg" data-caption="Market detail" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/113.jpeg" alt="kitchen light" data-src="images/113.jpeg" data-caption="Kitchen light" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/115.jpeg" alt="sunset steps" data-src="images/115.jpeg" data-caption="Sunset steps" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/114.jpeg" alt="doorways" data-src="images/114.jpeg" data-caption="Blue doorways" />
+      </figure>
+
+      <figure class="photo-card" tabindex="0">
+        <img loading="lazy" src="images/116.jpeg" alt="harvest" data-src="images/116.jpeg" data-caption="Monsoon harvest" />
+      </figure>
+    </div>
+  </section>
+</main>
+
+<!-- LIGHTBOX / VIEWER -->
+<div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <button class="lb-close" title="Close (Esc)">&times;</button>
+  <button class="lb-prev" title="Previous (Left)">&larr;</button>
+
+  <div class="lb-inner">
+    <img id="lbImage" src="" alt="" />
+    <p id="lbCaption" class="lb-caption"></p>
+
+    <div class="lb-actions">
+      <a id="lbInstagram" class="btn" href="https://www.instagram.com/typedandtaken" target="_blank">Open on Instagram</a>
+      <button id="lbDownload" class="btn" title="Download image">Download</button>
+    </div>
+  </div>
+
+  <button class="lb-next" title="Next (Right)">&rarr;</button>
+</div>
+
+<footer>
+  <p>Follow my journey on <a href="https://www.instagram.com/typedandtaken" target="_blank">Instagram</a></p>
+</footer>
+
+</body>
+</html>

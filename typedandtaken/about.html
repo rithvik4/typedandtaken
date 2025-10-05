@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | typedandtaken</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="typedandtaken home">typed<span>and</span>taken</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="writings.html">Writings</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="page-hero about-hero animate" aria-label="About hero">
+  <div class="hero-inner">
+    <br>
+    <h1>Hi, I'm <span class="accent">Rithvik Kumar</span></h1>
+    <br>
+    <p class="hero-sub">Developer by profession — photographer & writer by heart. I build things that solve problems and create pieces that pause people.</p>
+  </div>
+</section>
+
+<!-- PROFILE + BIO -->
+<main class="about-main" style="padding:2.5rem 5%;">
+  <div class="profile-grid animate" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:320px 1fr;gap:2rem;align-items:start;">
+    
+    <!-- profile card -->
+    <aside class="profile-card">
+      <img src="images/pic.webp" alt="Rithvik Kumar" class="profile-large">
+      <div class="profile-stats">
+        <div>
+          <strong>100+</strong>
+          <small>Photos</small>
+        </div>
+        <div>
+          <strong>40+</strong>
+          <small>Writings</small>
+        </div>
+        <div>
+          <strong>2</strong>
+          <small>Years Dev</small>
+        </div>
+      </div>
+
+      <div class="profile-actions" style="margin-top:1rem;">
+        <br>
+        <a class="btn" href="contact.html">Get in touch</a>
+        <br>
+        <br>
+        <a class="btn" href="https://www.instagram.com/typedandtaken" target="_blank" style="background:transparent;color:#7a6fff;border:1px solid rgba(122,111,255,0.12);margin-left:0.6rem;">Instagram</a>
+      </div>
+    </aside>
+
+    <!-- bio & skills -->
+    <section>
+      <div class="about-text">
+        <h2>About me</h2>
+        <br>
+        <p id="bioShort" class="bio-text" style="color:#555;">
+          I’m a full-stack developer who carries a camera and a notebook. My days are split between building features and framing moments — and I love how both need patience, a little curiosity, and repetition. 
+        </p>
+
+        <p id="bioLong" class="bio-text" style="color:#555;display:none; margin-top:0.8rem;">
+          I started coding because I liked making tools that helped people; I started taking pictures because I liked to remember what a light felt like. Over the years I’ve worked on web applications, automation scripts, and UX improvements — while also learning how to tell short stories through images and lines. When I’m not debugging or framing, I read essays, experiment with street photography, and collect small travel notes.
+        </p>
+
+        <button id="toggleBio" class="btn" aria-expanded="false" style="margin-top:1rem;background:transparent;color:#7a6fff;border:1px solid rgba(122,111,255,0.12);">Read more</button>
+      </div>
+
+      <!-- skills -->
+      <div class="skills" style="margin-top:1.8rem;">
+        <h3>Skills</h3>
+        <div class="skill-row">
+          <label>Frontend (HTML/CSS/JS)</label>
+          <div class="skill-bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill-row">
+          <label>React</label>
+          <div class="skill-bar"><span style="width:75%"></span></div>
+        </div>
+        <div class="skill-row">
+          <label>Java </label>
+          <div class="skill-bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill-row">
+          <label>Python / Data</label>
+          <div class="skill-bar"><span style="width:70%"></span></div>
+        </div>
+        <div class="skill-row">
+          <label>Testing</label>
+          <div class="skill-bar"><span style="width:70%"></span></div>
+        </div>
+        <div class="skill-row">
+          <label>Photography</label>
+          <div class="skill-bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill-row">
+          <label>Writings</label>
+          <div class="skill-bar"><span style="width:75%"></span></div>
+        </div>
+      </div>
+
+      <!-- timeline -->
+      <div class="timeline" style="margin-top:2rem;">
+        <h3>Journey</h3>
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <time>2017</time>
+            <div><strong>High School</strong><div class="muted">Hyderbad Talent School</div></div>
+          </li>
+          <li class="timeline-item">
+            <time>2019</time>
+            <div><strong>Intermediate</strong><div class="muted">Sri Chaitanya Junior College</div></div>
+          </li>
+          <li class="timeline-item">
+            <time>2024</time>
+            <div><strong>Computer Science Engineering </strong><div class="muted">Bharat Institute of Engineering and Technology</div></div>
+          </li>
+          <li class="timeline-item">
+            <time>2023 – 2024</time> 
+            <div><strong>Worked at Tech Introspectors & Bharat Intern </strong><div class="muted"> Web developer Intern </div></div>
+          </li>
+          <li class="timeline-item">
+            <time>2025</time> 
+            <div><strong>Currently Working at Kopen Soft </strong><div class="muted"> Web developer </div></div>
+          </li>
+        </ol>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer style="margin-top:3rem;">
+  <p>© 2025 typedandtaken | Built by Rithvik Kumar</p>
+</footer>
+
+<!-- small inline script for Read more toggle (keeps js/script.js unchanged) -->
+<script>
+  (function(){
+    const toggle = document.getElementById('toggleBio');
+    const shortP = document.getElementById('bioShort');
+    const longP = document.getElementById('bioLong');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      if (expanded) {
+        longP.style.display = 'none';
+        toggle.textContent = 'Read more';
+        toggle.setAttribute('aria-expanded','false');
+      } else {
+        longP.style.display = 'block';
+        toggle.textContent = 'Show less';
+        toggle.setAttribute('aria-expanded','true');
+      }
+      // animate into view (if needed)
+      longP.classList.add('animate');
+      setTimeout(()=> longP.classList.add('show'), 40);
+    });
+  })();
+</script>
+
+</body>
+</html>

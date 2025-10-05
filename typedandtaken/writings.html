@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Writings | typedandtaken</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="typedandtaken home">typed<span>and</span>taken</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="writings.html" class="active">Writings</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero writings-hero animate" aria-hidden="false">
+  <div class="hero-inner">
+    <br>
+    <br>
+    <h1>Words that rest between frames</h1>
+    <p>Short pieces, lines & essays — soft reflections on light, place and pause. Read. Pause. Return.</p>
+  </div>
+</section>
+
+<!-- FILTERS + SEARCH -->
+<section class="controls animate" aria-label="Search and filter writings">
+  <div class="controls-inner">
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="Search titles, lines or tags..." aria-label="Search writings">
+      <button id="clearSearch" title="Clear search" aria-hidden="true">&times;</button>
+    </div>
+
+    <div class="tags-wrap" id="tagsWrap" role="list" aria-label="Filter by tags">
+      <!-- Tag chips inserted in markup for quick selection -->
+      <button class="tag-chip" data-tag="all">All</button>
+      <button class="tag-chip" data-tag="reflection">Reflection</button>
+      <button class="tag-chip" data-tag="street">Street</button>
+      <button class="tag-chip" data-tag="travel">Travel</button>
+      <button class="tag-chip" data-tag="poetry">Poetry</button>
+    </div>
+  </div>
+</section>
+
+<!-- WRITINGS GRID -->
+<section class="writings-grid animate" id="writingsGrid" aria-live="polite">
+  <!-- Each article card has data attributes used by JS for search/filter/modal -->
+  <article class="writing-card" data-tags="reflection,poetry" data-title="Taking a breath, letting the world spin around" tabindex="0">
+    <img src="images/photo1.jpg" alt="breath moment" class="writing-thumb">
+    <div class="card-content">
+      <h3 class="card-title">Taking a breath, letting the world spin around</h3>
+      <p class="card-excerpt">Finding beauty in the pause — sometimes silence says more than words ever can.</p>
+      <div class="card-meta">
+        <span class="tag">Reflection</span>
+        <span class="date">Apr 12, 2025</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn read-btn" data-id="w1">Read</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="writing-card" data-tags="street,reflection" data-title="Between light and shadow" tabindex="0">
+    <img src="images/photo2.jpg" alt="light and shadow" class="writing-thumb">
+    <div class="card-content">
+      <h3 class="card-title">Between light and shadow</h3>
+      <p class="card-excerpt">Photography taught me that contrast is what creates magic — in frames and in life.</p>
+      <div class="card-meta">
+        <span class="tag">Street</span>
+        <span class="date">Mar 23, 2025</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn read-btn" data-id="w2">Read</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="writing-card" data-tags="travel,reflection" data-title="A train window hymn" tabindex="0">
+    <img src="images/photo3.jpg" alt="train window" class="writing-thumb">
+    <div class="card-content">
+      <h3 class="card-title">A train window hymn</h3>
+      <p class="card-excerpt">A passage of fields, an unedited playlist of faces — and the small quiet of arriving.</p>
+      <div class="card-meta">
+        <span class="tag">Travel</span>
+        <span class="date">Feb 9, 2025</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn read-btn" data-id="w3">Read</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="writing-card" data-tags="poetry,reflection" data-title="Silent afternoons" tabindex="0">
+    <img src="images/photo4.jpg" alt="afternoon light" class="writing-thumb">
+    <div class="card-content">
+      <h3 class="card-title">Silent afternoons</h3>
+      <p class="card-excerpt">Notes on small rituals — tea cooling, pages turning, and how light feels like memory.</p>
+      <div class="card-meta">
+        <span class="tag">Poetry</span>
+        <span class="date">Jan 18, 2025</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn read-btn" data-id="w4">Read</button>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- PAGINATION (simple) -->
+<nav class="pagination animate" aria-label="Writings pagination">
+  <button class="btn" id="loadMore">Load more</button>
+</nav>
+
+<!-- READ-MODAL (opens when user clicks Read) -->
+<div class="read-modal" id="readModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+  <div class="read-modal-inner">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+
+    <div class="modal-header">
+      <img src="images/profile.jpg" alt="author" class="modal-author-img">
+      <div>
+        <h4 class="modal-author">Rithvik Kumar</h4>
+        <time class="modal-date" id="modalDate">Apr 12, 2025</time>
+      </div>
+    </div>
+
+    <h2 id="modalTitle" class="modal-title">Title placeholder</h2>
+
+    <div class="modal-body" id="modalBody">
+      <!-- full writing inserted by JS -->
+    </div>
+
+    <div class="modal-actions">
+      <a href="https://www.instagram.com/typedandtaken" target="_blank" class="btn">View on Instagram</a>
+      <button id="modalShare" class="btn" title="Copy link">Copy link</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 typedandtaken | Built by Rithvik Kumar</p>
+</footer>
+
+</body>
+</html>

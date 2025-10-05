@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>typedandtaken | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="typedandtaken home">typed<span>and</span>taken</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="writings.html">Writings</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero home-hero">
+  <div class="hero-decor">
+    <!-- soft gradient blobs -->
+    <svg class="blob blob-1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g transform="translate(300,300)">
+        <path d="M120,-170C155,-147,180,-115,188,-79C196,-42,186,-0,165,29C144,58,112,73,80,98C48,123,24,157,-6,173C-36,189,-72,187,-106,169C-140,151,-173,116,-183,73C-194,30,-182,-20,-164,-60C-146,-99,-122,-129,-88,-155C-54,-181,-27,-203,7,-213C41,-222,82,-194,120,-170Z" fill="#f6e8ff" />
+      </g>
+    </svg>
+
+    <svg class="blob blob-2" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g transform="translate(300,300)">
+        <path d="M98,-128C133,-100,164,-71,176,-34C188,3,183,47,162,82C140,116,102,141,64,162C25,183,-14,200,-48,186C-82,172,-111,126,-136,81C-161,36,-182,-8,-170,-45C-158,-81,-114,-111,-74,-136C-34,-161,7,-181,41,-172C75,-163,110,-156,98,-128Z" fill="#eef6ff" />
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-inner animate">
+    <h1 class="hero-title">Capturing <span>moments</span> — typing <span>thoughts</span></h1>
+    <p class="hero-sub">A soft corner for photographs and short lines. Curated frames, brief essays, and small travel notes.</p>
+
+    <div class="hero-ctas">
+      <a href="#featured" class="btn">Featured</a>
+      <a href="#writingsPreview" class="btn" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.18);">Read Writings</a>
+      <a href="#" id="instagramBtn" class="btn" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.18);">Instagram</a>
+    </div>
+
+    <div class="hero-credit">Built & curated by <strong>Rithvik Kumar</strong></div>
+  </div>
+
+  <!-- subtle mouse parallax hint -->
+  <div class="hero-scroll-hint">Scroll ↓</div>
+</section>
+
+<!-- FEATURED CAROUSEL -->
+<section id="featured" class="featured animate">
+  <div class="featured-head" style="max-width:1200px;margin:0 auto;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;">
+    <h2>Featured frames</h2>
+    <div class="carousel-controls">
+      <button id="prevFeat" class="icon-btn" aria-label="Previous">&larr;</button>
+      <button id="nextFeat" class="icon-btn" aria-label="Next">&rarr;</button>
+    </div>
+  </div>
+
+  <div class="carousel" id="carousel" tabindex="0" aria-roledescription="carousel" aria-label="Featured photos">
+    <div class="slides" id="slides">
+      <!-- use same images as gallery, each slide links to gallery -->
+      <a class="slide" href="gallery.html"><img src="images/108.jpeg" alt="Featured 1"></a>
+      <a class="slide" href="gallery.html"><img src="images/102.jpeg" alt="Featured 2"></a>
+      <a class="slide" href="gallery.html"><img src="images/101.jpeg" alt="Featured 3"></a>
+      <a class="slide" href="gallery.html"><img src="images/103.jpeg" alt="Featured 4"></a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW (compact) -->
+<section id="galleryPreview" class="gallery-preview animate">
+  <div class="section-head" style="max-width:1200px;margin:0 auto;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;">
+    <h2>More photos</h2>
+    <a href="gallery.html" class="btn" style="background:#fff;color:#3f3f3f;">See all</a>
+  </div>
+
+  <div class="mini-grid" style="max-width:1200px;margin:0 auto;padding:0 5%;">
+    <a href="gallery.html"><img src="images/104.jpeg" alt="mini 1"></a>
+    <a href="gallery.html"><img src="images/105.jpeg" alt="mini 2"></a>
+    <a href="gallery.html"><img src="images/112.jpeg" alt="mini 3"></a>
+    <a href="gallery.html"><img src="images/109.jpeg" alt="mini 4"></a>
+  </div>
+</section>
+
+<!-- WRITINGS PREVIEW (enhanced) -->
+<section id="writingsPreview" class="writings-preview animate">
+  <div class="section-head" style="max-width:1200px;margin:0 auto;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;">
+    <h2>Recent writings</h2>
+    <a href="writings.html" class="btn" style="background:#fff;color:#3f3f3f;">Read all</a>
+  </div>
+
+  <div class="writing-cards" style="max-width:1200px;margin:0 auto;padding:0 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+    <article class="writing-card animate">
+      <h3>Taking a breath, letting the world spin around</h3>
+      <p>Finding beauty in the pause — sometimes silence says more than words ever can.</p>
+      <div style="margin-top:0.8rem;"><a href="writings.html" class="btn" style="background:transparent;color:#7a6fff;border:1px solid rgba(122,111,255,0.12);">Read</a></div>
+    </article>
+
+    <article class="writing-card animate">
+      <h3>Between light and shadow</h3>
+      <p>Photography taught me that contrast is what creates magic — in frames and in life.</p>
+      <div style="margin-top:0.8rem;"><a href="writings.html" class="btn" style="background:transparent;color:#7a6fff;border:1px solid rgba(122,111,255,0.12);">Read</a></div>
+    </article>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section class="subscribe animate" aria-label="Newsletter">
+  <div style="max-width:900px;margin:0 auto;padding:2rem 5%;text-align:center;">
+    <h3>Get new posts & behind-the-scenes</h3>
+    <form id="subscribeForm" style="margin-top:0.8rem;display:flex;max-width:600px;margin-left:auto;margin-right:auto;gap:0.6rem;">
+      <input id="subscribeEmail" type="email" placeholder="you@domain.com" required style="flex:1;padding:0.8rem;border-radius:999px;border:1px solid rgba(0,0,0,0.06);">
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
+    <p style="color:#8b8b9f;margin-top:0.6rem;font-size:0.95rem;">No spam — just occasional updates and a photo or two.</p>
+  </div>
+</section>
+
+<footer>
+  <div style="max-width:1200px;margin:0 auto;padding:2rem 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+    <p>© 2025 typedandtaken | Built by Rithvik Kumar</p>
+    <p>Follow <a href="https://www.instagram.com/typedandtaken" target="_blank">@typedandtaken</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | typedandtaken</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo" aria-label="typedandtaken home">typed<span>and</span>taken</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="writings.html">Writings</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="page-hero contact-hero animate" aria-label="Contact hero">
+  <div class="hero-inner">
+    <br>
+    <br>
+    <br>
+    <h1>Let’s connect</h1>
+    <p>Questions, collaborations, prints or just a hello — drop a line and I’ll get back to you.</p>
+  </div>
+</section>
+
+<main class="contact-main" style="padding:2.5rem 5%;">
+  <div class="contact-grid animate" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 360px;gap:2rem;">
+    
+    <!-- Contact form -->
+    <section class="contact-card">
+      <h2>Send a message</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Rithvik" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Project / Question (optional)">
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <div style="display:flex;gap:0.75rem;align-items:center;margin-top:0.6rem;flex-wrap:wrap;">
+          <button class="btn" type="submit">Send message</button>
+          <button class="btn" id="clearForm" type="button" style="background:transparent;color:#7a6fff;border:1px solid rgba(122,111,255,0.12);">Clear</button>
+          <small style="color:#8b8b9f;margin-left:auto;">Prefer instant? <a href="https://www.instagram.com/rithvikkk__" target="_blank">DM me</a></small>
+        </div>
+      </form>
+    </section>
+
+    <!-- Contact info -->
+    <aside class="contact-info">
+      <div class="info-card">
+        <h3>Contact details</h3>
+        <p style="color:#666;margin-top:0.4rem;">I check messages regularly — thanks for reaching out.</p>
+
+        <div class="info-row">
+          <strong>Email</strong>
+          <a href="mailto:bura.rithvik@gmail.com">bura.rithvik@gmail.com</a>
+          <button class="copy-btn" data-copy="bura.rithvik@gmail.com" title="Copy email">Copy</button>
+        </div>
+
+        <div class="info-row">
+          <strong>Phone</strong>
+          <a href="tel:+919949977120">+91 99499 77120</a>
+          <button class="copy-btn" data-copy="+919949977120" title="Copy phone">Copy</button>
+        </div>
+
+        <div class="info-row">
+          <strong>Instagram</strong>
+          <div style="display:flex;gap:0.5rem;align-items:center;">
+            <a href="https://www.instagram.com/typedandtaken" target="_blank">@typedandtaken</a>
+            <a href="https://www.instagram.com/rithvikkk__" target="_blank" style="color:#7a6fff;font-weight:700;">@rithvikkk__</a>
+          </div>
+        </div>
+
+        <div style="margin-top:1rem;">
+          <a class="btn" href="about.html">About me</a>
+          <a class="btn" href="gallery.html" style="background:transparent;color:#7a6fff;border:1px solid rgba(122,111,255,0.12);">View photos</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<!-- Success modal -->
+<div class="popup" id="contactSuccess" aria-hidden="true" role="dialog" aria-label="Message sent">
+  <div class="popup-content animate">
+    <span class="close" title="Close">&times;</span>
+    <h2>Message sent</h2>
+    <p style="color:#666;margin:0.6rem 0 1.2rem;">Thanks for the note — I’ll reply as soon as I can. Meanwhile you can follow me on Instagram for updates.</p>
+    <a href="https://www.instagram.com/typedandtaken" class="btn" target="_blank">Visit Instagram</a>
+  </div>
+</div>
+
+<footer style="margin-top:3rem;">
+  <p>© 2025 typedandtaken | Built by Rithvik Kumar</p>
+</footer>
+
+</body>
+</html>
